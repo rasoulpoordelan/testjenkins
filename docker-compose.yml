@@ -1,0 +1,14 @@
+version: "3"
+services:
+  myapp:
+    image: firsttest:1
+    ports:
+    - 5068
+    networks:
+    - myappnet
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+networks:
+  myappnet:
