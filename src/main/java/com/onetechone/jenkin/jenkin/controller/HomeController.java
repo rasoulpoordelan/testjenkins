@@ -9,7 +9,7 @@ public class HomeController {
   @GetMapping
   public String hello()
   {
-    return "hello medrick its";
+    return "hello medrick its ok";
   }
 
 }
