@@ -5,6 +5,13 @@ pipeline {
     agent any
     stages {
 
+        stage('ls test')
+        {
+            steps{
+               sh "ls"
+            }
+        }
+
         stage('mvn build')
         {
             steps{
